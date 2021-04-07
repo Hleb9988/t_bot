@@ -2,12 +2,16 @@
 import os
 from typing import Optional
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from pydantic import Field
 from pydantic.main import BaseModel
 
-app = FastAPI()
 
+load_dotenv()
+
+
+app = FastAPI()
 
 class ConfigParams(BaseModel):
     bot_token: Optional[str] = Field(None)

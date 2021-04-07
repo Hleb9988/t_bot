@@ -7,8 +7,11 @@ name = "pypi"
 uvicorn = "*"
 fastapi = "*"
 pydantic = "*"
+python-dotenv = "*"
+requests = "*"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.9"
